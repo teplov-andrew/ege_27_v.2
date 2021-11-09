@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
 void number_of_products_div()
@@ -11,6 +11,13 @@ void number_of_products_div()
     4. вывести только пары, произведения которых ерптно 55
     5. только количество пар
     */
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n, 0);
+    for (int i(0); i<n; i++)
+        cin>>numbers[i];
+    for (int i(0); i<n; i++)
+        cout<<numbers[i]<<" ";
 }
 
 int main()
