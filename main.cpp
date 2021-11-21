@@ -21,7 +21,7 @@ void number_of_products_div()
         for (int i(j+1); i<n;i++)
         {
             int cur_prod(numbers[j]*numbers[i]);
-            if (cur_prod%21==0)
+            if (cur_prod%14==0)
                 good_pairs++;
         }
     cout<< good_pairs<< endl;
