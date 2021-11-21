@@ -11,6 +11,7 @@ void number_of_products_div()
 	4. выводим количество пар
 	*/
 	int n(0), cur(0);
+	int n14(0), n7(0), no(0)
     cin >> n;
     for (int i(0); i<n; i++)
     {
