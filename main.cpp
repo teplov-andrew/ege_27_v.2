@@ -24,9 +24,8 @@ void number_of_products_div()
 			n2++;
 		
     }
-	cout<<n14<<endl;
-	cout<<n7<<endl;
-	cout<<n2<<endl;
+    no = n - n14 - n2 - n7;
+    cout << n14*(n14-1)/2+n14*n2+n14*n7+n14*no+n2*n7;
 }
 
 int main()
