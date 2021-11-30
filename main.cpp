@@ -13,13 +13,13 @@ void min_sum_min_distance_INEFF()
     5. вместо вывода пары - сумму
     6. найти минимальную сумму
     */
-    int n(0);
+    long long int n(0);
     cin >> n;
     vector<int> numbers(n, 0);
     for (int i(0); i<n; i++)
         cin>>numbers[i];
-    for (int j(0); j<n-1; j++)
-        for (int i(j+1); i<n;i++)
+    for (int j(0); j<n-4; j++)
+        for (int i(j+4); i<n;i++)
             cout<<numbers[j]<<" "<<numbers[i]<< endl;
 
 }
