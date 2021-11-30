@@ -20,7 +20,7 @@ void min_sum_min_distance_INEFF()
         cin>>numbers[i];
     for (int j(0); j<n-4; j++)
         for (int i(j+4); i<n;i++)
-            cout<<numbers[j]<<" "<<numbers[i]<< endl;
+            cout<<numbers[j]+numbers[i]<< endl;
 
 }
 
