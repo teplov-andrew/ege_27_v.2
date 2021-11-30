@@ -2,13 +2,20 @@
 
 using namespace std;
 
-void number_of_products_div()
+void min_sum_min_distance_INEFF()
 {
-    cout << "Hello world!" << endl;
+    /*
+    1. считать все числа
+    2. вывечти все числа
+    3. вывести все пары
+    4. вывести только достаточно далекие пары
+    5. вместо вывода пары - сумму
+    6. найти минимальную сумму
+    */
 }
 
 int main()
 {
-    number_of_products_div();
+    min_sum_min_distance_INEFF();
     return 0;
 }
