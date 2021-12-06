@@ -32,6 +32,8 @@ void number_of_products_div()
 		else 
 			++n0;
 	}
+	cout << n66 * (n66 - 1) / 2 + n66 * (n33 + n22 + n6 + n11 + n5 + n2) + (n33 * n22 + n33 * n6 + n22 * n6) + (n33 * n2 + n22 * n5 + n6 * n11) + n0 * n66;
+}
 
 int main()
 {
