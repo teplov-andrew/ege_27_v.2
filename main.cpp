@@ -14,14 +14,13 @@ void min_sum_min_distance_EFF()
     7. это кандидат на минимальную пару
     8. один ход червяка закончен, повторяем
     */
-    int n(0), cur(0);
-    cin>> n;
-    for (int i(0); i<4; i++)
-    {
-        cin >> cur;
-        cout<< cur<<endl;
-    }
-
+    int n(0);
+    cin >> n;
+    vector<int> worm(4);
+    for (int i(0); i < 4; i++)
+        cin >> worm[i];
+    for (int i(0); i < 4; i++)    
+        cout<<worm[i];
 
 }
 
