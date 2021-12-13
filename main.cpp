@@ -1,6 +1,6 @@
-#include <iostream>
+#include <stdio.h>
 
-using namespace std;
+
 
 void min_sum_min_distance_EFF()
 {
@@ -14,13 +14,26 @@ void min_sum_min_distance_EFF()
     7. это кандидат на минимальную пару
     8. один ход червяка закончен, повторяем
     */
-    int n(0);
-    cin >> n;
-    vector<int> worm(4);
-    for (int i(0); i < 4; i++)
-        cin >> worm[i];
-    for (int i(0); i < 4; i++)    
-        cout<<worm[i];
+
+    long int n = 0;
+    scanf("%li", &n);
+    long int a[n];
+    long int new_min(999999);
+    long int cur = 0;
+    long int last_min = 999999;
+    
+    for (int i = 0; i<n; i++) {
+        scanf("%li", &a[i]);
+    }
+    
+    last_min = a[0];
+    for (int i = 0; i<n; i++) {
+        if (i > 3) {
+            cur = a[i] + last_min;
+    }
+   
+    printf("%li", cur);
+
 
 }
 
@@ -29,3 +42,6 @@ int main()
     min_sum_min_distance_EFF();
     return 0;
 }
+
+
+
