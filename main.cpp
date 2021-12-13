@@ -23,9 +23,15 @@ void min_sum_min_distance_EFF()
     long int last_min = 999999;
     
     for (int i = 0; i<n; i++) {
-        scanf("%li", &a[i]);
-    }
-    
+      if (i > 3) {
+            cur = a[i] + last_min;
+            if (a[i-4] < last_min ){
+              last_min = a[i-4];
+              printf("Min: %li, %li\n", last_min, a[i-4]);
+            }
+        }
+	}
+       
     last_min = a[0];
     for (int i = 0; i<n; i++) {
         if (i > 3) {
