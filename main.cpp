@@ -7,9 +7,9 @@ void number_of_products_div()
 	/**
     + 1. считать и сохранять все числа
     + 2. вывести все пары
-    + 3. вместо пары вывести суммы
+    + 3. добавлять все в вектор и находить максимум
     4. делимость сумм проверить
-    5. вывести только наибольшую сумму
+    5. если нет пар выводить -1
     */
 	std::vector<std::size_t> FindMaxElements(std::vector<int> const& v)
 	{
@@ -46,6 +46,14 @@ void number_of_products_div()
     vector<int> res_vector(n);
     for (int i(0); i<n; i++)
         cin >> numbers[i];
+	for (auto i : result) {
+          res += i;
+    }
+
+    if (res == 0)
+      res = -1;
+
+    cout << res << endl;
 
 }
 
