@@ -1,19 +1,9 @@
 #include <iostream>
 
 using namespace std;
-
-void number_of_products_div()
+std::vector<std::size_t> FindMaxElements(std::vector<int> const& v)
 {
-	/**
-    + 1. считать и сохранять все числа
-    + 2. вывести все пары
-    + 3. добавлять все в вектор и находить максимум
-    4. делимость сумм проверить
-    5. если нет пар выводить -1
-    */
-	std::vector<std::size_t> FindMaxElements(std::vector<int> const& v)
-	{
-    std::vector<std::size_t> indices;
+	std::vector<std::size_t> indices;
     int current_max = 0;
     int prev_max = 0;
 
@@ -37,7 +27,17 @@ void number_of_products_div()
     }
 
     return indices;
-	}
+}
+void max_sum_div_eff_1()
+{
+	/**
+    + 1. считать и сохранять все числа
+    + 2. вывести все пары
+    + 3. добавлять все в вектор и находить максимум
+    4. делимость сумм проверить
+    5. если нет пар выводить -1
+    */
+
 
     int n(0);
     int res(0);
@@ -59,6 +59,6 @@ void number_of_products_div()
 
 int main()
 {
-    number_of_products_div();
+    max_sum_div_eff_1();
     return 0;
 }
