@@ -11,6 +11,13 @@ void number_of_products_div()
     4. делимость сумм проверить
     5. вывести только наибольшую сумму
     */
+	int n(0);
+    int res(0);
+    cin >> n;
+    vector<int> numbers(n);
+    vector<int> res_vector(n)
+    for (int i(0); i<n; i++)
+        cin >> numbers[i];
 
 }
 
