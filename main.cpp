@@ -2,13 +2,19 @@
 
 using namespace std;
 
-void number_of_products_div()
+void num_sum_max_distance_ineff_1()
 {
-    cout << "Hello world!" << endl;
+	/*
+    1  читать и запомнить входные данные
+    2  вывести все пары
+    3  вместо вывода пары посчитать их сумму
+    4  вывести только пары, сумма которых кратно 39 и разность индексов меньше 7
+    5  только количество пар
+	*/
 }
 
 int main()
 {
-    number_of_products_div();
+    num_sum_max_distance_ineff_1();
     return 0;
 }
