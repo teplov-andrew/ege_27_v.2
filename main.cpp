@@ -16,6 +16,13 @@ void num_sum_min_distance_ineff_2()
     vector<int> numbers(n, 0);
     for (int i(0); i<n; i++)
         cin>>numbers[i];
+	
+    for (int j(0); j<n-1; j++)
+        for (int i(j+1); i<n;i++)
+        {
+            int cur_sum(numbers[j]+numbers[i]);
+			cout<<cur_sum<<endl;
+		}
 }
 
 int main()
