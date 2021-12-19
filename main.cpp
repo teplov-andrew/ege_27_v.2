@@ -22,7 +22,6 @@ void num_sum_max_distance_ineff_1()
 		for (int i(j+1); i<n;i++)
 		{
 			int cur_sum(numbers[j]+numbers[i]);
-			cout<<cur_sum<<endl;
 			if (cur_sum%39==0 and i-j<7)
 				good_pairs++;
 		}
