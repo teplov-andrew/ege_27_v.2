@@ -21,8 +21,10 @@ void num_sum_multiple_distance_ineff_3()
         for (int i(j+1); i<n;i++)
         {
             int cur_sum(numbers[j]+numbers[i]);
-			cout<<cur_sum<<endl;
-		}
+            if (cur_sum%49==0 and (i-j)%8==0)
+                good_pairs++;
+        }
+    cout<< good_pairs<< endl;
 }
 
 int main()
