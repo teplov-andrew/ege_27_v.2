@@ -11,6 +11,11 @@ void num_sum_multiple_distance_ineff_3()
     4  вывести только пары, сумма которых кратно 49 и разность которых кратна 8
     5  только количество пар
     */
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n, 0);
+    for (int i(0); i<n; i++)
+        cin>>numbers[i];
 }
 
 int main()
