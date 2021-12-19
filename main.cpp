@@ -20,9 +20,11 @@ void num_sum_min_distance_ineff_2()
     for (int j(0); j<n-1; j++)
         for (int i(j+1); i<n;i++)
         {
-            int cur_sum(numbers[j]+numbers[i]);
-			cout<<cur_sum<<endl;
-		}
+            int cur_prod(numbers[j]+numbers[i]);
+            if (cur_prod%27==0 and i-j>=4)
+                good_pairs++;
+        }
+    cout<< good_pairs<< endl;
 }
 
 int main()
