@@ -14,14 +14,15 @@ void num_sum_min_distance_ineff_2()
     int n(0);
     cin >> n;
     vector<int> numbers(n, 0);
+	int good_pairs(0);
     for (int i(0); i<n; i++)
         cin>>numbers[i];
 	
     for (int j(0); j<n-1; j++)
         for (int i(j+1); i<n;i++)
         {
-            int cur_prod(numbers[j]+numbers[i]);
-            if (cur_prod%27==0 and i-j>=4)
+            int cur_sum(numbers[j]+numbers[i]);
+            if (cur_sum%27==0 and i-j>=4)
                 good_pairs++;
         }
     cout<< good_pairs<< endl;
