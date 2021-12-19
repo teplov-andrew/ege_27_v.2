@@ -11,6 +11,11 @@ void num_sum_min_distance_ineff_2()
     4  вывести только пары, сумма которых кратно 27 и  разность индексов не менее 4
     5  только количество пар
     */
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n, 0);
+    for (int i(0); i<n; i++)
+        cin>>numbers[i];
 }
 
 int main()
