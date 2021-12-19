@@ -16,7 +16,14 @@ void num_sum_max_distance_ineff_1()
     vector<int> numbers(n, 0);
     for (int i(0); i<n; i++)
         cin>>numbers[i];
-}
+	
+	for (int j(0); j<n-1; j++)
+    for (int i(j+1); i<n;i++)
+    {
+        int cur_sum(numbers[j]+numbers[i]);
+		cout<<cur_sum<<endl;
+	}
+}	
 
 int main()
 {
