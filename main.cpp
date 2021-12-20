@@ -28,8 +28,10 @@ void number_sum_div_ineff_2()
     {
       if ((numbers[i]+numbers[j])%40==0)
         if (numbers[i]>40 or numbers[j]>40)
+			cnt++;
     }
   }
+  cout<<cnt<<endl;
 }
 
 
