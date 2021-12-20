@@ -2,13 +2,17 @@
 
 using namespace std;
 
-void number_of_products_div()
+void num_sum_max_distance_eff_1()
 {
-    cout << "Hello world!" << endl;
+    /*
+    1)берем первые 7 чисел 
+    2) просматриваем их на предмет того, кратны ли они 39
+    3) берем следующие числа от 7 до конца и поочередно проверяем
+    */
 }
 
 int main()
 {
-    number_of_products_div();
+    num_sum_max_distance_eff_1();
     return 0;
 }
