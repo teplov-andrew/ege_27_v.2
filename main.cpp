@@ -25,8 +25,8 @@ void number_of_products_div()
         res[worm[i % 4] % 27] += 1; 
         cin >> worm[i % 4]; 
         cnt += res[(27 - (worm[i % 4] % 27)) % 27]; 
-
     }
+	cout << cnt <<endl;
 }
 
 int main()
