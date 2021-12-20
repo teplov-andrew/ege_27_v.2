@@ -25,6 +25,19 @@ void num_sum_max_distance_eff_1()
           if ((number[i] +number[j])%39==0)
             cnt++;
     }
+
+    for (int i(7); i < n; i++)
+    {
+        int a;
+        cin >> a;
+        for (int j(0); j < 6; j++)
+        {
+            number[j] = number[j + 1];
+            if ((a +number[j])%39==0)
+            cnt++;
+        }
+        number[6] = a;
+    }
 }
 
 int main()
