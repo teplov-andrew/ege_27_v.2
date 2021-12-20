@@ -1,28 +1,23 @@
-#include <stdio.h>
+#include <iostream>
+#include <vector>
 
 
+using namespace std;
 
-void min_sum_distance_ineff_2()
+void number_sum_div_ineff_2()
 {
-  // int n = 0;
-  // scanf("%i", &n);
-  int k = 0;
-  int cnt = 0;
-  long int num[9999];
-  while (num[cnt-1] != -9999){
-    scanf("%li", &num[cnt]);
-    cnt++;
-  }
-
-  for(int i=0; i<cnt-1; i++) {
-    printf("%li\n", num[i]);
-  } 
+	/*
+	1. считать и запомнить числа, посчитать кол-во элементов в векторе
+	2. вывести все пары чисел
+	3. проверить делимость суммы на 40 и наличие элемента больше 40 в паре
+	4. посчитать и вывести итоговое количество 
+	*/
 }
 
 
 int main()
 {
-    min_sum_distance_ineff_2();
+    number_sum_div_ineff_2();
     return 0;
 }
 
