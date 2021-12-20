@@ -22,6 +22,13 @@ void number_sum_div_ineff_2()
     numbers.push_back(n);
     cur++;
   }
+  for (int i(0);i<cur-2;i++)
+  {
+    for (int j(i+1);j<cur-1;j++)
+    {
+		cout<<numbers[i]<<numbers[j]<<endl;
+    }
+  }
 }
 
 
