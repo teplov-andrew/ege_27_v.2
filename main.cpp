@@ -1,6 +1,7 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
+
 
 void num_sum_max_distance_eff_1()
 {
@@ -9,6 +10,8 @@ void num_sum_max_distance_eff_1()
     2) просматриваем их на предмет того, кратны ли они 39
     3) берем следующие числа от 7 до конца и поочередно проверяем
     */
+    
+    
     int n(0);
     cin >> n;
     int cnt(0);
@@ -38,6 +41,7 @@ void num_sum_max_distance_eff_1()
         }
         number[6] = a;
     }
+    cout << cnt<< endl;
 }
 
 int main()
