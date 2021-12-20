@@ -26,7 +26,8 @@ void number_sum_div_ineff_2()
   {
     for (int j(i+1);j<cur-1;j++)
     {
-		cout<<numbers[i]<<numbers[j]<<endl;
+      if ((numbers[i]+numbers[j])%40==0)
+        if (numbers[i]>40 or numbers[j]>40)
     }
   }
 }
