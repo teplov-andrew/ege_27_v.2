@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -10,6 +11,16 @@ void num_sum_itog_ineff()
     3. вывести только те тройки, у которых сумма чисел делится на 4
     4. найти минимальную тройку
     */
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n,0);
+    for (int i(0); i<n; i++)
+    {
+        cin>>numbers[i];
+    }
+    for (int i(0); i<n; i++)
+        cout<<numbers[i]<<" ";
+
 }
 
 int main()
